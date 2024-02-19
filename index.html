@@ -28,12 +28,14 @@
         esriConfig.apiKey = "AAPKcf47264e32794af29b8505a640992140dTOZDTXkDMXGQTuCncQfjuHjEesD1DFlJERirFncgdHb7Ok0f1ko4f6m-N_jnQ8N";
 
         const map = new Map({
-          basemap: "dark-gray-vector"
+          basemap: "satellite"
         });
 
         const view = new MapView({
-          container: "viewDiv",
-          map:map
+          map: map,
+          center: [-97.7431, 30.2672], // Longitude, latitude
+          zoom: 12, // Zoom level
+          container: "viewDiv" // Div element
         });
 
       });
