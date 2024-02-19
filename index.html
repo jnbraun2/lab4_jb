@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang = "en">
-  <head>
-    <title>Data Collector for AGOL</title>
+<head>
+  <title>Data Collector for AGOL</title>
 
-    <!-- Meta for the browser to allow for mobile first design. -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <!-- Meta for the browser to allow for mobile first design. -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
 
     <!-- Importing the css and libraries for esri.js -->
-    <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
-    <script src="https://js.arcgis.com/4.26/"></script>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.26/"></script>
 
-    <!-- Loading the modules. -->
-    <script>
-      require(["esri/Config", "esri/Map", "esri/views/MapView" ], function(esriConfig, Map, MapView) {
+  <!-- Loading the modules. -->
+  <script>
+    require(["esri/Config", "esri/Map", "esri/views/MapView" ], function(esriConfig, Map, MapView) {
 
-        esriConfig.apiKey = "AAPKcf47264e32794af29b8505a640992140dTOZDTXkDMXGQTuCncQfjuHjEesD1DFlJERirFncgdHb7Ok0f1ko4f6m-N_jnQ8N";
+      esriConfig.apiKey = "AAPKcf47264e32794af29b8505a640992140dTOZDTXkDMXGQTuCncQfjuHjEesD1DFlJERirFncgdHb7Ok0f1ko4f6m-N_jnQ8N";
 
-        const map = new Map({
-          basemap: "satellite"
-        });
-
-        const view = new MapView({
-          map: map,
-          center: [-97.7431, 30.2672], // Longitude, latitude
-          zoom: 12, // Zoom level
-          container: "viewDiv" // Div element
-        });
-
+      const map = new Map({
+        basemap: "satellite"
       });
 
-    </script>
+      const view = new MapView({
+        map: map,
+        center: [-97.7431, 30.2672], // Longitude, latitude
+        zoom: 12, // Zoom level
+        container: "viewDiv" // Div element
+      });
 
-    <style> html, body, #viewDiv {padding: 0; margin: 0; height: 100%; width: 100; } </style>
+    });
 
-  </head>
-  <body>
+  </script>
 
-    <div id="viewDiv"></div>
+  <style> html, body, #viewDiv {padding: 0; margin: 0; height: 100%; width: 100; } </style>
 
-  </body>
+</head>
+<body>
+
+  <div id="viewDiv"></div>
+
+</body>
 </html>
